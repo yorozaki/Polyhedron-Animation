@@ -42,11 +42,11 @@ yorozakifahim@gmail.com
    git clone https://github.com/yorozaki/CubeAnimation.git
    cd CubeAnimation
 2. Install dependencies (recommended via Anaconda)
-   conda install numpy matplotlib
+  - conda install numpy matplotlib
   - or
   - pip install numpy matplotlib
 3. Run the script
-   python Cube.py
+  - python Cube.py
 4. Save the Video (optional)
-   ani.save('CubeAnimation.mp4', writer='ffmpeg', fps=30)
+  - ani.save('CubeAnimation.mp4', writer='ffmpeg', fps=30)
 
