@@ -4,7 +4,7 @@ from matplotlib.animation import FuncAnimation
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 # ---------- setup ----------
-fig = plt.figure(figsize=(6,6))
+fig = plt.figure(figsize=(10,10), dpi=300)
 ax = fig.add_subplot(111, projection="3d")
 ax.set_facecolor("black")
 fig.patch.set_facecolor("black")
@@ -138,8 +138,8 @@ def update(frame):
     # --- apply persistent offsets (530–570) ---
     if hasattr(update,"shift_targets"):
         shiftA2_t,shiftB2_t,shiftA4_t,shiftB4_t = update.shift_targets
-        if 530<=frame<=540:
-            tmove=ease_in_out((frame-530)/10)
+        if 530<=frame<=560:
+            tmove=ease_in_out((frame-530)/30)
             shiftA2 = shiftA2_t*tmove
             shiftB2 = shiftB2_t*tmove
             shiftA4 = shiftA4_t*tmove
@@ -203,7 +203,7 @@ ani=FuncAnimation(fig,update,frames=900,interval=50,blit=False)
 save_path = r"C:\whisper_project\Final.mp4"  # 👈 Change path if needed
 print(f"Saving animation to: {save_path} ...")
 
-ani.save(save_path, writer="ffmpeg", fps=30)
+ani.save(save_path, writer="ffmpeg", fps=30, dpi=300)
 print("✅ Animation saved successfully!")
 
 plt.show()
