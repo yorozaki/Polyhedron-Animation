@@ -198,4 +198,12 @@ def update(frame):
     return []
 
 ani=FuncAnimation(fig,update,frames=900,interval=50,blit=False)
+
+# ---------- Save the animation ----------
+save_path = r"C:\whisper_project\Final.mp4"  # 👈 Change path if needed
+print(f"Saving animation to: {save_path} ...")
+
+ani.save(save_path, writer="ffmpeg", fps=30)
+print("✅ Animation saved successfully!")
+
 plt.show()
