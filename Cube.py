@@ -1,3 +1,8 @@
+# Polyhedron Animation
+# Copyright (c) 2025 Md Rakibul Hasan
+# Released under the MIT License. See LICENSE for details.
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
