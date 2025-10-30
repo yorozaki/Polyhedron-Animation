@@ -36,7 +36,7 @@ Architect, designer, and researcher exploring intersections between geometry, ro
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 1. Clone the repository:
 
